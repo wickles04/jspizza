@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "InterBold";
+    src: url(../fonts/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: "InterLight";
+    src: url(../fonts/Inter-Light.ttf);
+
+}
+@font-face {
+    font-family: "InterRegular";
+    src: url(../fonts/Inter-Regular.ttf);
+}
+:root {
+--font-size--titulo: 24px;
+--font-size--preco: 24px;
+--font-size--destaque: 16px;
+--font-size--paragrafo: 16px;
+--text-transform: uppercase; 
+--cinza-escuro: #D9D9D9;
+--cinza: #EEEEEE;
+--white: #ffffff;
+--azul-claro: #E5F4FF;
+--azul-escuro: #1298F8;
+--verde: #48D05F; 
+--vermelho: #E92929;  
+}
+
+/* topo -- header */
+.topo{
+    font-size: 1.5rem;
+    height: 136px;
+    background-color: var(--azul-claro);
+    display: flex;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: InterBold;
+}
+.topo__marca{
+
+}
+.topo__titulo{
+    color: var(--azul-escuro);
+}
+/* conteudo -- main */
+.conteudo{
+    background-color: #ededed;
+    padding: 32px;
+}
+/* card */
+.pizzas-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 104px;
+}
+.pizzas-cards__item{
+    display: flex;
+    max-width: 200px;
+    padding: 64px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    margin: 8px;
+    line-height: 2rem;
+    text-align: center;
+
+    border-radius: 35px;
+    background-color: #fff;
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+
+}
+.pizzas-cards__img{
+    width: 200px;
+}
+ 
+.pizzas-cards__btn-add{
+    color: var(--azul);
+    cursor: pointer;
+    font-size: 2rem;
+}
+.pizzas-cards__preco{
+    font-family: InterLight;
+    font-size: 1.5rem;
+}
+.pizzas-cards__titulo{
+    font-family: InterBold;
+    font-size: 2rem;
+}
+.pizzas-cards__texto{
+    font-family: InterRegular;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+.modal-pizza{
+    display: flex;
+    border-radius: 24px;
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+
+}
+.modal-pizza img{
+    width: 200px;
+
+}
+.modal-pizza__detalhes{
+    display: ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.modal-pizza__btn-fechar{
+}

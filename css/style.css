@@ -12,11 +12,11 @@
     src: url(../fonts/Inter-Regular.ttf);
 }
 :root {
---font-size--titulo: 24px;
+/* --font-size--titulo: 24px;
 --font-size--preco: 24px;
 --font-size--destaque: 16px;
 --font-size--paragrafo: 16px;
---text-transform: uppercase; 
+--text-transform: uppercase;  */
 --cinza-escuro: #D9D9D9;
 --cinza: #EEEEEE;
 --white: #ffffff;
@@ -28,7 +28,9 @@
 
 /* topo -- header */
 .topo{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-family: "InterBold";
+    font-weight: bold;
     height: 136px;
     background-color: var(--azul-claro);
     display: flex;
@@ -36,7 +38,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-family: InterBold;
 }
 .topo__marca{
 
@@ -77,7 +78,7 @@
 }
  
 .pizzas-cards__btn-add{
-    color: var(--azul);
+    color: var(--azul-escuro);
     cursor: pointer;
     font-size: 2rem;
 }
@@ -86,7 +87,7 @@
     font-size: 1.5rem;
 }
 .pizzas-cards__titulo{
-    font-family: InterBold;
+    font-family: "InterBold";
     font-size: 2rem;
 }
 .pizzas-cards__texto{
@@ -94,27 +95,137 @@
     font-size: 1rem;
 }
 
-
-
-
-
-
-.modal-pizza{
+/* MODAL */
+.background-modal{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
     display: flex;
-    border-radius: 24px;
-    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
-
-}
-.modal-pizza img{
-    width: 200px;
-
-}
-.modal-pizza__detalhes{
-    display: ;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    transition: opacity 0.5s ease;
 }
+ 
+.background-modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+ 
+.modal-pizza{
+    width: 700px;
+    min-width: 600px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 8px 8px 32px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 16px;
+}
+ 
+.modal-pizza__detalhes{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+ 
 .modal-pizza__btn-fechar{
+    padding: 8px;
+    align-self: flex-end;
+    color: var(--cinza);
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+.modal-pizza__img{
+    width: 200px;
+    height: 200px;
+}
+.modal-pizza__tx-titulo{
+    font-family: InterBold;
+    font-size: 2rem
+}
+.modal-pizza__tx-preco,.modal-pizza__tx-tamanho{
+    font-family: "InterLight";
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.modal-pizza__preco{
+    display: flex;
+
+}
+/* .modal-pizza__tx-valor */
+
+.modal-pizza__controle-tamanhos{
+    display: flex;
+    justify-content: center;
+    font-family: InterBold;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    background-color: #eee;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.modal-pizza__tamanho{
+    padding: 8px;
+    cursor: pointer;
+}
+.modal-pizza__tamanho:hover{
+    background-color: #1298F8;
+}
+.modal-pizza__tamanho--ativo{
+    background-color: #1298F8;
+}
+.modal-pizza__tx-tamanho span{
+    font-family: InterLight;
+    font-size: 0.75rem;
+
+}
+.modal-pizza__qtd{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.modal-pizza__controle-qtd{
+    display: flex;
+    border-radius: 16px;
+    width: 64px;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #EEEEEE;
+
+}
+.modal-pizza__menos,.modal-pizza__mais{
+    cursor: pointer;
+    padding: 0px 10px;
+    color: #333;
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+.modal-pizza__btns{
+    display: flex;
+    gap:16px;
+}
+.modal-pizza__btn{
+    padding: 8px 16px;
+    border-radius: 16px;
+    color:#fff;
+    border:none;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.modal-pizza__btn--adicionar{
+    background-color: var(--verde);
+}
+.modal-pizza__btn--cancelar{
+    background-color: var(--vermelho);
 }

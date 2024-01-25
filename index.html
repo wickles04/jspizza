@@ -20,19 +20,7 @@
 
                 <div class="pizzas-cards__item">
                     <img src="/img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
-                    <a class="pizzas-cards__btn-add"href="">
-                        <span class="fa-solid fa-circle-plus"></span>
-                    </a>
-                    <span class="pizzas-cards__preco">R$99,99</span>
-                    <span class="pizzas-cards__titulo">Título</span>
-                    <p class="pizzas-cards__texto">Dois hamburguers, alface, molho...</p>
-                </div>
-
-
-
-                <div class="pizzas-cards__item">
-                    <img src="/img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
-                    <a class="pizzas-cards__btn-add"href="">
+                    <a class="pizzas-cards__btn-add"href="#modal">
                         <span class="fa-solid fa-circle-plus"></span>
                     </a>
                     <span class="pizzas-cards__preco">R$99,99</span>
@@ -41,7 +29,7 @@
                 </div>
                 <div class="pizzas-cards__item">
                     <img src="/img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
-                    <a class="pizzas-cards__btn-add"href="">
+                    <a class="pizzas-cards__btn-add"href="#modal">
                         <span class="fa-solid fa-circle-plus"></span>
                     </a>
                     <span class="pizzas-cards__preco">R$99,99</span>
@@ -50,7 +38,16 @@
                 </div>
                 <div class="pizzas-cards__item">
                     <img src="/img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
-                    <a class="pizzas-cards__btn-add"href="">
+                    <a class="pizzas-cards__btn-add"href="#modal">
+                        <span class="fa-solid fa-circle-plus"></span>
+                    </a>
+                    <span class="pizzas-cards__preco">R$99,99</span>
+                    <span class="pizzas-cards__titulo">Título</span>
+                    <p class="pizzas-cards__texto">Dois hamburguers, alface, molho...</p>
+                </div>
+                <div class="pizzas-cards__item">
+                    <img src="/img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
+                    <a class="pizzas-cards__btn-add"href="#modal">
                         <span class="fa-solid fa-circle-plus"></span>
                     </a>
                     <span class="pizzas-cards__preco">R$99,99</span>
@@ -89,7 +86,7 @@
                 
             </div>
         </footer>
-        <div id="modal" class="backgroud-modal">
+        <div id="modal" class="background-modal">
             <div class="modal-pizza">
                 <img src="/img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="modal-pizza__img">
                 <div class="modal-pizza__detalhes">
@@ -103,16 +100,19 @@
                         <div class="modal-pizza__tamanho">Grande <span>860g</span>
                         </span></div>
                     </div>
-                    <div class="modal-pizza__tx-preco"></div>
+                    <div class="modal-pizza__tx-preco">Preço</div>
                     <div class="modal-pizza__qtd">
-                        <button class="modal-pizza__menos">-</button>
-                        <div class="modal-pizza__tx-qtd"></div>
-                        <button class="modal-pizza__mais">+</button>
+                        <div class="modal-pizza__tx-">R$99,99</div>
+                        <div class="modal-pizza__controle-qtd">
+                            <button class="modal-pizza__menos">-</button>
+                            <div class="modal-pizza__tx-qtd">1</div>
+                            <button class="modal-pizza__mais">+</button>
+                        </div>
                     </div>
-                </div>
-                <div class="modal-pizza__btns">
-                    <button class="modal-pizza__btn modal-pizza__btn--adicionar">Adicionar ao carrinho</button>
-                    <button class="modal-pizza__btn modal-pizza__btn--cancelar">Cancelar</button>
+                    <div class="modal-pizza__btns">
+                        <button class="modal-pizza__btn modal-pizza__btn--adicionar">Adicionar ao carrinho</button>
+                        <button class="modal-pizza__btn modal-pizza__btn--cancelar">Cancelar</button>
+                    </div>
                 </div>
             </div>
         </div>

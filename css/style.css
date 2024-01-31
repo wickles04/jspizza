@@ -109,7 +109,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.5s ease;
+    transition: opacity 0,5s ease;
 }
  
 .background-modal:target{
@@ -149,7 +149,7 @@
 }
 .modal-pizza__tx-titulo{
     font-family: InterBold;
-    font-size: 2rem
+    font-size: 2rem;
 }
 .modal-pizza__tx-preco,.modal-pizza__tx-tamanho{
     font-family: "InterLight";
@@ -180,9 +180,13 @@
 .modal-pizza__tamanho:hover{
     background-color: #1298F8;
 }
-.modal-pizza__tamanho--ativo{
+
+/* para javascript */
+
+/* .modal-pizza__tamanho--ativo{
     background-color: #1298F8;
-}
+} */
+
 .modal-pizza__tx-tamanho span{
     font-family: InterLight;
     font-size: 0.75rem;

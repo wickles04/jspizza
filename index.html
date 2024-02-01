@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
         <title> JS Pizzaria </title>
         <script src="https://kit.fontawesome.com/5f303b8da4.js" crossorigin="anonymous" defer></script>
     </head>
+
     <body>
         <header class="topo">
             <h1 class="topo__brand">JS Pizzas
@@ -22,7 +24,7 @@
 
                 <div class="pizzas-cards__item">
                     <img src="/img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
-                    <a class="pizzas-cards__btn-add"href="#modal">
+                    <a class="pizzas-cards__btn-add" href="#modal">
                         <span class="fa-solid fa-circle-plus"></span>
                     </a>
                     <span class="pizzas-cards__preco">R$99,99</span>
@@ -31,7 +33,7 @@
                 </div>
                 <div class="pizzas-cards__item">
                     <img src="/img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
-                    <a class="pizzas-cards__btn-add"href="#modal">
+                    <a class="pizzas-cards__btn-add" href="#modal">
                         <span class="fa-solid fa-circle-plus"></span>
                     </a>
                     <span class="pizzas-cards__preco">R$99,99</span>
@@ -40,7 +42,7 @@
                 </div>
                 <div class="pizzas-cards__item">
                     <img src="/img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
-                    <a class="pizzas-cards__btn-add"href="#modal">
+                    <a class="pizzas-cards__btn-add" href="#modal">
                         <span class="fa-solid fa-circle-plus"></span>
                     </a>
                     <span class="pizzas-cards__preco">R$99,99</span>
@@ -49,7 +51,7 @@
                 </div>
                 <div class="pizzas-cards__item">
                     <img src="/img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
-                    <a class="pizzas-cards__btn-add"href="#modal">
+                    <a class="pizzas-cards__btn-add" href="#modal">
                         <span class="fa-solid fa-circle-plus"></span>
                     </a>
                     <span class="pizzas-cards__preco">R$99,99</span>
@@ -59,15 +61,38 @@
             </section>
 
             <aside class="carrinho">
-                <h1 class="carrinho__titulo">Suas Pizzas</h1>
-                <div class="carrinho-item">
-                    <img src="" alt="" class="carrinho__item-img">
-                    <p class="carrinho__item-descricao">Portuguesa (G)</p>
-                    <p class="carrinho__item-preco">R$ 59,90</p>
+                <h1 class="carrinho__tx tx--titulo">Suas Pizzas</h1>
+                <div class="carrinho__item">
+
+                    <div class="carrinho__item-tipo">   
+                        <img src="/img/img-item@2x.png" alt="" class="carrinho__img">
+                        <div class="Item-valor">
+                        <p class="carrinho__tx">Portuguesa (G)</p>
+                        <p class="carrinho__tx">R$ 59,90</p></div>
+                        </div>
+
                     <div class="carrinho__qtd-controle">
-                        <button class="carrinho__item-adicionar">adicionar ao carrinho</button>
-                        <span class="carrimho-item-qtd"></span>
-                        <button class="carrinho__item-remover">remover item</button>
+                        <button class="carrinho__btn btn--adicionar">
+                            <span class="fa-solid fa-plus"></span>
+                        </button>
+                        <span class="carrinho__qtd">0</span>
+                        <button class="carrinho__btn btn--remover">
+                            <span class="fa-solid fa-minus"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="carrinho__calculos">
+                    <div class="alinhador">
+                        <p class="carrinho__tx tx--item">Subtotal:</p><span class="carrinho__tx tx--valor">R$99,99</span>
+                    </div>
+                    <div class="alinhador">
+                        <p class="carrinho__tx tx--item">Desconto (10%):</p><span class="carrinho__tx tx--valor">R$99,99</span>
+                    </div>
+                    <div class="alinhador">
+                        <p class="carrinho__tx tx--total">Total :</p><span class="carrinho__tx tx--valor-total">R$99,99</span>
+                    </div>
+                    <div class="fnlz-compra">
+                        <button class="carrinho__btn btn--finalizar-compra">Finalizar Compra</button>
                     </div>
                 </div>
             </aside>
@@ -85,7 +110,7 @@
                 <span class="fa-brands fa-facebook"></span>
                 <span class="fa-brands fa-whatsapp"></span>
                 <span class="fa-brands fa-instagram"></span>
-                
+
             </div>
         </footer>
         <div id="modal" class="background-modal">
@@ -100,7 +125,7 @@
                         <div class="modal-pizza__tamanho">Pequena <span>320g</span></div>
                         <div class="modal-pizza__tamanho">Média <span>530</span></div>
                         <div class="modal-pizza__tamanho">Grande <span>860g</span>
-                        </span></div>
+                            </span></div>
                     </div>
                     <div class="modal-pizza__tx-preco">Preço</div>
                     <div class="modal-pizza__qtd">
@@ -119,4 +144,5 @@
             </div>
         </div>
     </body>
+
 </html>

@@ -11,20 +11,6 @@
     font-family: "InterRegular";
     src: url(../fonts/Inter-Regular.ttf);
 }
-:root {
-/* --font-size--titulo: 24px;
---font-size--preco: 24px;
---font-size--destaque: 16px;
---font-size--paragrafo: 16px;
---text-transform: uppercase;  */
---cinza-escuro: #D9D9D9;
---cinza: #EEEEEE;
---white: #ffffff;
---azul-claro: #E5F4FF;
---azul-escuro: #1298F8;
---verde: #48D05F; 
---vermelho: #E92929;  
-}
 
 /* topo -- header */
 .topo{
@@ -232,4 +218,112 @@
 }
 .modal-pizza__btn--cancelar{
     background-color: var(--vermelho);
+}
+
+/* CARRINHO */
+.carrinho{
+    display: flex;
+    width: 1000px;
+    padding: 26px 8px;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 10px;
+
+    background: var(--azul-claro);
+}
+/* titulo */
+.carrinho h1{
+    color: #000;
+
+
+    font-family: InterRegular;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.carrinho__tx{
+    font-family: InterLight;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.carrinho__item{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+   
+}
+.carrinho__item img{
+    width: 72px;
+    height: 72px;
+
+}
+.carrinho__item-tipo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+}
+.carrinho__qtd-controle {
+    background-color: #EEEEEE;
+    border-radius: 16px;
+    font-size: 24px;
+    overflow: hidden;
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: center;
+}
+
+.carrinho__qtd-controle button{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 42px;
+    height: 40px;
+}
+
+.alinhador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-top: 1px solid #1298F8;
+}
+
+.tx--item{
+    color: var(--azul-escuro);
+    font-family:InterRegular;
+    font-weight: 700;
+}
+.tx--valor{
+    font-size: 20px;
+}
+.tx--total{
+    font-family: InterBold;
+    font-size: 24px;
+    font-weight: 700;
+}
+.tx--valor-total{
+    font-size: 26px;
+    font-weight: 800;
+}
+.fnlz-compra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn--finalizar-compra{
+    background-color: var( --verde);
+    border:none;
+    border-radius: 16px;
+    color: #fff;
+    width: 400px;
+    height: 56px;
 }
